@@ -7,9 +7,9 @@
       repo: 'https://github.com/ngschmidt/ansible-git-sync-and-run.git'
       dest: "ansible-git-sync-and-run"
 
-      - name : Run!
-        shell:
-          "(python3 helloworld.py > helloworld_out.txt)"
+  - name : Run!
+    shell:
+      "(python3 helloworld.py > helloworld_out.txt)"
 #      - name: Send Results!
 #        mail:
 #          host: 127.0.0.1
