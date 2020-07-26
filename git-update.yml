@@ -2,7 +2,7 @@
   - name : Git Clone and run
     hosts: localhost
     tasks:
-      - name : Git clone...
+  - name : Git clone...
         git:
           repo: 'https://github.com/ngschmidt/ansible-git-sync-and-run.git'
           dest: "ansible-git-sync-and-run"
