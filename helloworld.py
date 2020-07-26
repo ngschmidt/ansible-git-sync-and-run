@@ -4,5 +4,3 @@
 ### 24 Jul 2020
 
 print('Hello World!')
-
-.rdfsfd
