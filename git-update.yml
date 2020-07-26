@@ -1,24 +1,13 @@
 --- 
-  - name : Git Clone and run
-    hosts: localhost
-    tasks:
-  - name : Git clone...
-    git:
-      repo: 'https://github.com/ngschmidt/ansible-git-sync-and-run.git'
-      dest: "ansible-git-sync-and-run"
-
-  - name : Run!
-    shell:
-      "(python3 helloworld.py > helloworld_out.txt)"
-#      - name: Send Results!
-#        mail:
-#          host: 127.0.0.1
-#          port: 25
-#          subject: Run-Report
-#          body: Automated build test results are attached.
-#          from: ansible@engyak.net
-#          to: ansibuild@engyak.net
-#          attach:
-#            - helloworld_out.txt
-#          charset: us-ascii
-asdsafd
+- 
+  hosts: localhost
+  name: "Git Clone and run"
+  tasks: ~
+- 
+  git: 
+    dest: ansible-git-sync-and-run
+    repo: "https://github.com/ngschmidt/ansible-git-sync-and-run.git"
+  name: "Git clone..."
+- 
+  name: Run!
+  shell: "(python3 helloworld.py > helloworld_out.txt)"
