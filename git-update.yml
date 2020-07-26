@@ -3,9 +3,9 @@
     hosts: localhost
     tasks:
   - name : Git clone...
-        git:
-          repo: 'https://github.com/ngschmidt/ansible-git-sync-and-run.git'
-          dest: "ansible-git-sync-and-run"
+    git:
+      repo: 'https://github.com/ngschmidt/ansible-git-sync-and-run.git'
+      dest: "ansible-git-sync-and-run"
 
       - name : Run!
         shell:
