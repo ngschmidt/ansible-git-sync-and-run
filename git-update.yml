@@ -1,13 +1,14 @@
 --- 
-- 
+-
   hosts: localhost
   name: "Git Clone and run"
   tasks: ~
-- 
-  git: 
+-
+  git:
     dest: ansible-git-sync-and-run
     repo: "https://github.com/ngschmidt/ansible-git-sync-and-run.git"
   name: "Git clone..."
-- 
+-
   name: Run!
   shell: "(python3 helloworld.py > helloworld_out.txt)"
+  
